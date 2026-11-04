@@ -1,0 +1,7 @@
+{
+  "intercept": 0.317927808829585,
+  "slope": 0.008630089692231323,
+  "transform": "signed_log",
+  "n": 258,
+  "built_from": "tone_all.csv + headline_numbers.csv"
+}
