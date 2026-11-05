@@ -1,0 +1,31 @@
+﻿file,pct,confidence,source,page,text,metric,correct
+NST_2026-08-20.pdf,19,high,4e,2,Revenue increased 19% to A$7.6 billion (FY25: A$6.4 billion) driven by a 26% increase in average realised gold price to,revenue,y
+IAG_2023-02-13.pdf,26.7,high,table_checked,1,Cash earnings 176 223 26.7%,npat_underlying,y
+CAR_2023-02-13.pdf,37.3,high,4e,1,"Adjusted net profit for the period attributable to members Up 37.3% to 121,839",npat_underlying,y
+MPL_2026-08-20.pdf,5.9,high,table_checked,5,"Group revenue from external customers 8,604.0 9,115.2 5.9%",revenue,y
+WES_2023-02-15.pdf,14.1,high,table_checked,1,"Net profit after tax 1,384 1,213 14.1",npat_stat,y
+CAR_2026-02-09.pdf,8,high,4e,1,"Revenue from continuing operations Up 8.0% to 625,788",revenue,y
+SHL_2024-02-20.pdf,-47.1,high,table_checked,1,Net Profit 202 382 (47)%,npat_stat,y
+CAR_2022-02-14.pdf,22.3,high,4e,1,"Profit for the half-year after tax Up 22.3% to 74,943",npat_stat,y
+NST_2026-08-20.pdf,1.4,high,table_checked,2,"Cash Earnings A$M 2,914.2 2,873.2 1 %",npat_underlying,y
+MPL_2025-02-27.pdf,-0.8,high,table_checked,5,NPAT attributable to Medibank shareholders 343.2 340.3 (0.8%),npat_stat,y
+ASX_2022-08-18.pdf,7.5,low,sentence,3,"ector and CEO, said: “ASX has again delivered a solid full-year result, driven by revenue growth of 7.5%, up $71.2",revenue,y
+ASX_2022-02-10.pdf,6.6,low,sentence,3,"Director and CEO, said: “ASX has delivered a strong first half result, driven by revenue growth of 6.6%, up $30.9",revenue,y
+RHC_2022-02-24.pdf,-29.7,low,sentence,1,support the public sector and the community response to the pandemic o• Statutory profit declined 29.7% reflectin,npat_stat,y
+SHL_2026-08-20.pdf,13,low,sentence,1,"Revenue growth of 13%, includin",revenue,y
+TLS_2023-02-16.pdf,6.4,low,sentence,2,Total income was up 6.4 percent and EBITD,revenue,
+NAB_2022-05-05.pdf,4,low,sentence,1,"bank, including the fastest growth in business lending since the GFC. 1H22 cash earnings increased 4% compared",npat_underlying,
+SHL_2025-08-21.pdf,10,low,sentence,2,"c’s Radiology division performed very strongly during the year, achieving organic revenue growth of 10% and EBITD",revenue,
+ALQ_2023-05-29.pdf,23.4,low,sentence,2,"Underlying continuing NPAT was up 23.4% yoy, exce",npat_underlying,
+WBC_2023-05-10.pdf,22,low,sentence,11,"Group operations 1.1 Performance overview Financial highlights $4,001m 11.3% Net profit, up 22% on 1H22 R",npat_stat,
+TWE_2025-02-13.pdf,32.5,low,sentence,1,"Statutory NPAT $220.9m, up 32.5%; pre mate",npat_stat,
+WTC_2024-08-21.pdf,28,medium,4e,2,"Revenue from ordinary activities Up 28% to 1,041.7 816.8",revenue,
+IAG_2024-08-21.pdf,7.9,medium,sentence_value,2,"w IAG today announced its 2024 full-year results, reporting a net profit after tax (NPAT) of $898m, up 7.9% on FY23.",npat_stat,
+QBE_2023-02-17.pdf,2.7,medium,table_computed,2,Net profit after income tax US$M 770 750,npat_stat,
+STO_2023-02-22.pdf,221,medium,sentence_value,1,"Reported net profit after tax US$2,112 million, up 221%",npat_stat,
+WES_2023-08-25.pdf,18.2,medium,table_checked,1,"Revenue 43,550 36,838 18.2",revenue,
+IAG_2022-08-12.pdf,71.5,medium,table,1,Cash earnings 747 213 71.5%,npat_underlying,
+REA_2023-08-11.pdf,2,medium,table_checked,11,"Reported operating income 1,183.2 1,160.2 2%",revenue,
+COH_2025-08-15.pdf,9,medium,table_checked,8,Statutory net profit 388.9 356.8 9% 3%,npat_stat,
+SCG_2024-08-21.pdf,170.3,medium,table_computed,12,Net profit attributable to members of the Group (i) 403.9 149.4,npat_stat,
+SUN_2024-02-26.pdf,17.8,medium,table_checked,2,Profit after tax from ongoing functionsv 715 607 17.8,npat_stat,

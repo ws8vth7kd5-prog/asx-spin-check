@@ -88,9 +88,11 @@ CONTEXT = [
                           r"appointed (?:as )?(?:the )?(?:chief executive|ceo|managing director)|"
                           r"(?:ceo|chief executive|managing director) (?:transition|succession)|(?:will )?retire as (?:ceo|chief|managing)",
      "New leaders sometimes reset expectations low; departing ones may want to finish on a high."),
-    # "amortisation and impairment" is just the definition of EBITDA, not an actual impairment
-    ("Impairments or one-offs", r"(?<!amortisation and )(?<!amortisation, and )impairments?\b(?! \(underlying ebitda)|"
-                                r"write-?downs?\b|one-off (?:cost|charge|loss|item)s?",
+    # "amortisation and impairment" is just the definition of EBITDA, not an actual impairment.
+    # A real impairment/write-down sentence is preferred; "one-off costs" only if there isn't one.
+    ("Impairments or one-offs", [r"(?<!amortisation and )(?<!amortisation, and )impairments?\b(?! \(underlying ebitda)|"
+                                 r"write-?downs?\b",
+                                 r"one-off (?:cost|charge|loss|item)s?"],
      "One-off losses are often excluded from 'underlying' profit. Compare statutory and underlying."),
     ("Guidance change", r"(?:downgrade|lower|below|revised)\w* (?:\w+ ){0,2}guidance|guidance (?:downgrade|lowered|withdrawn|revised)",
      "A guidance change resets expectations. Upbeat language can soften a downgrade."),
@@ -103,8 +105,9 @@ def context_flags(text):
     """[(name, why, first sentence that mentions it)] for each situation found in the text."""
     readable = [s for s in to_sentences(text) if len(s.split()) <= 50]   # skip table/footnote blobs
     out = []
-    for name, pattern, why in CONTEXT:
-        hit = next((s for s in readable if re.search(pattern, s, re.I)), None)
+    for name, patterns, why in CONTEXT:
+        patterns = [patterns] if isinstance(patterns, str) else patterns   # several = tried in order
+        hit = next((s for p in patterns for s in readable if re.search(p, s, re.I)), None)
         if hit:
             out.append((name, why, hit))
     return out

@@ -173,9 +173,15 @@ def is_full_year(pdf):
     return is_full_year_text(" ".join((p.extract_text() or "") for p in pdf.pages[:2]))
 
 
+HALF_WORDS = re.compile(r"half[- ]year|first half|interim|\b(?:1H|H1|HY)\s?(?:FY\s?)?\d{2,4}\b|six months|6 months|"
+                        r"appendix 4d", re.I)
+FULL_WORDS = re.compile(r"full[- ]year|\bFY\s?(?:20)?\d{2}\b|\bannual\b|twelve months|12 months|appendix 4e", re.I)
+
+
 def is_full_year_text(t):
-    half = len(re.findall(r"half[- ]year|interim|\b1H\s?\d{2}|\bHY\s?\d{2}|six months|6 months", t, re.I))
-    full = len(re.findall(r"full[- ]year|\bFY\s?\d{2}\b|annual|twelve months|12 months|appendix 4e", t, re.I))
+    half = len(HALF_WORDS.findall(t))
+    # remove half-year labels first, so the "FY2026" inside "1H FY2026" isn't counted as full-year
+    full = len(FULL_WORDS.findall(HALF_WORDS.sub(" ", t)))
     return full > half
 
 

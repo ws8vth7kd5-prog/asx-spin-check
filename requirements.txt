@@ -1,8 +1,13 @@
---extra-index-url https://download.pytorch.org/whl/cpu
-torch
-streamlit
-altair
 pdfplumber
 pandas
 numpy
+requests
+yfinance
+scipy
+matplotlib
+jupyter
+ipykernel
+streamlit
+altair
+torch
 transformers

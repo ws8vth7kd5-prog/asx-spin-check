@@ -1,0 +1,22 @@
+file,pct,confidence,source,page,text,metric,correct
+FMG_2026-02-25.pdf,10.5,high,table_checked,3,"Revenue (US$ million) 8,439 7,638 10",revenue,y
+WES_2026-02-19.pdf,9.3,high,table_checked,1,"Net profit after tax 1,603 1,467 9.3",npat_stat,y
+RIO_2026-07-29.pdf,47.2,high,table_checked,1,"Profit after tax attributable to owners of Rio Tinto (net earnings) (US$ millions) 6,664 4,528 47 %",npat_stat,y
+ALL_2025-11-12.pdf,2.9,high,4e,4,"Profit after tax from continuing operations up 2.9% to 1,184.1",npat_stat,y
+WOW_2025-02-26.pdf,-20.9,high,table_checked,6,NPAT before significant items 741 937 (21.1)%,npat_underlying,y
+NAB_2024-05-02.pdf,-12.6,high,table_checked,6,"Cash earnings before non-controlling interests 3,557 3,666 4,070 (3.0) (12.6)",npat_underlying,y
+CBA_2024-02-14.pdf,-3.1,high,table_checked,9,"NPAT from continuing operations 5,019 4,892 5,180 3 (3)",npat_stat,y
+NAB_2025-11-06.pdf,2.9,low,sentence,5,Revenue increased by 2.9% with key,revenue,y
+BHP_2026-08-18.pdf,9,low,sentence,3,WAIO maintained its Attributable profit increased 9% to FY25 U,npat_stat,y
+CSL_2024-02-13.pdf,17,low,sentence,1,"NPAT $1.90 billion, up 17%",npat_stat,y
+WDS_2025-02-25.pdf,-13,low,sentence,1,Underlying NPAT decreased 13% from the,npat_underlying,y
+NAB_2024-11-07.pdf,-2,low,sentence,5,Revenue decreased by 2.0% mainly re,revenue,y
+WOW_2024-08-28.pdf,-93.3,low,sentence,9,NPAT attributable to equity holders of the parent entity after significant items was down 93.3% on the pr,npat_stat,y
+CBA_2026-08-12.pdf,6,low,sentence,1,"Operating income increased 6%, supporte",revenue,y
+WBC_2025-11-03.pdf,-2,medium,sentence_value,4,"Net profit was down 2% to $6,972 million. %",npat_stat,y
+ALL_2024-11-13.pdf,17.2,medium,4e,3,"Profit after tax and before amortisation of acquired intangibles up 17.2% to 1,555.1",npat_underlying,y
+COL_2024-08-27.pdf,7.6,medium,table_checked,5,"Sales revenue – continuing operations 43,571 40,483 7.6% 5.7%",revenue,y
+GMG_2024-02-15.pdf,29,medium,sentence_value,1,"The Group delivered operating profit of $1,127.4 million, up 29% on 1H23,",npat_underlying,y
+GMG_2025-02-19.pdf,8,medium,sentence_value,1,"The Group delivered operating profit of $1,222.4 million, up 8% on 1H24,",npat_underlying,y
+CSL_2025-08-19.pdf,19,medium,table,7,"Net Profit After Tax 2,714 3,136 3,217 19%",npat_stat,y
+REA_2026-02-06.pdf,8.5,medium,table_checked,8,Profit attributable to owners of parent 340.6 313.9 9%,npat_stat,y
