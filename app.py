@@ -25,30 +25,30 @@ METRIC_NAMES = {"revenue": "Revenue", "npat_stat": "Statutory NPAT", "npat_under
 IN_TEXT = {"revenue": "revenue", "npat_stat": "statutory NPAT", "npat_underlying": "underlying NPAT"}
 
 # dial zones: (colour, label). Tone = one hue getting brighter; spin = blue / grey / orange (diverging)
-TONE_ZONES = [("#1d3f6e", "Restrained"), ("#2a78d6", "Typical"), ("#6da7ec", "Very upbeat")]
-SPIN_ZONES = [(BLUE, "Plays it down"), ("#5a5955", "In line with numbers"), (ORANGE, "Rosier than the numbers")]
-
+TONE_ZONES = [("#3b6296", "Restrained"), ("#3987e5", "Typical"), ("#8dbdf3", "Very upbeat")]
+SPIN_ZONES = [(BLUE, "Plays it down"), ("#6b7a92", "In line with numbers"), (ORANGE, "Rosier than the numbers")]
 st.html("""
 <style>
+.brand, .tc-card, .kn, .tc-quote {color: #eef2f8;}
 .brand {display: flex; align-items: center; gap: 16px; margin: .5rem 0 1.4rem;}
 .brand-name {font-size: 2.2rem; font-weight: 800; letter-spacing: -.02em; line-height: 1.1;}
-.brand-tag {opacity: .7; font-size: 1.02rem; margin-top: 2px;}
-.tc-card {border: 1px solid rgba(255,255,255,.12); border-radius: 14px; padding: 14px 16px; height: 100%;
-          background: #0d0d0d; text-align: center; min-height: 300px;}
-.tc-label {font-size: .76rem; text-transform: uppercase; letter-spacing: .08em; opacity: .65; font-weight: 700;}
-.g-value {font-size: 2.1rem; font-weight: 800; line-height: 1; margin-top: 6px;}
-.g-value span {font-size: 1rem; font-weight: 500; opacity: .55; margin-left: 2px;}
-.tc-band {font-weight: 700; margin-top: .45rem;}
-.tc-note {font-size: .82rem; opacity: .65; margin-top: .15rem;}
+.brand-tag {color: #b9c4d6; font-size: 1.02rem; margin-top: 2px;}
+.tc-card {border: 1px solid rgba(110,160,230,.35); border-radius: 14px; padding: 14px 16px; height: 100%;
+          background: #1a2c4a; text-align: center; min-height: 300px; box-shadow: 0 6px 24px rgba(0,0,0,.35);}
+.tc-label {font-size: .76rem; text-transform: uppercase; letter-spacing: .08em; color: #b9c4d6; font-weight: 700;}
+.g-value {font-size: 2.1rem; font-weight: 800; line-height: 1; margin-top: 6px; color: #ffffff;}
+.g-value span {font-size: 1rem; font-weight: 500; color: #b9c4d6; margin-left: 2px;}
+.tc-band {font-weight: 700; margin-top: .45rem; color: #ffffff;}
+.tc-note {font-size: .82rem; color: #b9c4d6; margin-top: .15rem;}
 .profit {display: flex; flex-direction: column; justify-content: center;}
 .profit.up {background: rgba(12,163,12,.14); border-color: rgba(12,163,12,.65);}
 .profit.down {background: rgba(227,73,72,.14); border-color: rgba(227,73,72,.65);}
 .profit .big {font-size: 2.6rem; font-weight: 800; margin: .6rem 0 .2rem;}
 .up .big, .pill.up {color: #3fcf3f;} .down .big, .pill.down {color: #ff6b6a;}
-.kn {width: 100%; border-collapse: separate; border-spacing: 0; border: 1px solid rgba(255,255,255,.12);
-      border-radius: 12px; overflow: hidden; font-size: .93rem;}
-.kn th {text-align: left; font-size: .72rem; text-transform: uppercase; letter-spacing: .07em; opacity: .6;
-        font-weight: 700; padding: 10px 14px; background: #0d0d0d; border-bottom: 1px solid rgba(255,255,255,.12);}
+.kn {width: 100%; border-collapse: separate; border-spacing: 0; border: 1px solid rgba(110,160,230,.3);
+      border-radius: 12px; overflow: hidden; font-size: .93rem; background: #122039;}
+.kn th {text-align: left; font-size: .72rem; text-transform: uppercase; letter-spacing: .07em; color: #b9c4d6;
+        font-weight: 700; padding: 10px 14px; background: #1a2c4a; border-bottom: 1px solid rgba(110,160,230,.3);}
 .kn td {padding: 12px 14px; border-bottom: 1px solid rgba(255,255,255,.07); vertical-align: top;}
 .kn tr:last-child td {border-bottom: none;}
 .kn .name {font-weight: 700; white-space: nowrap;}
@@ -56,10 +56,10 @@ st.html("""
 .pill.up {background: rgba(12,163,12,.16);} .pill.down {background: rgba(227,73,72,.16);}
 .pill.none {opacity: .45; padding-left: 0;}
 .conf {white-space: nowrap;} .dot {display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 6px;}
-.kn details summary {cursor: pointer; opacity: .75; font-size: .85rem;}
-.kn details p {margin: .4rem 0 0; font-size: .85rem; opacity: .85;}
+.kn details summary {cursor: pointer; color: #b9c4d6; font-size: .85rem;}
+.kn details p {margin: .4rem 0 0; font-size: .85rem; color: #d6deea;}
 .tc-quote {border-left: 3px solid #3987e5; padding: .35rem 0 .35rem .9rem; margin: 0 0 .8rem;}
-.tc-quote small {opacity: .6;}
+.tc-quote small {color: #b9c4d6;}
 @media (max-width: 640px) {.kn .src {display: none;} .brand-name {font-size: 1.7rem;} .tc-card {min-height: 0;}}
 </style>
 """)
